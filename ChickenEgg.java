@@ -1,11 +1,11 @@
 class ChickenEgg{
   int state = 0;
   
-  CickenEgg(){
+  ChickenEgg(){
   
   }
   
-  void changeState(char input){
+  private void changeState(char input){
     switch(state){
       case 0:
         switch(input){
@@ -139,7 +139,7 @@ class ChickenEgg{
     }
   }
   
-  boolean isWordOfLanguage(String word){
+  public boolean isWordOfLanguage(String word){
     for(int i = 0; i<word.length; i++){
       changeState(word.charAt(i));
     }
